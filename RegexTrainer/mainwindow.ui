@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout">
+   <item>
+ <widget class="QComboBox" name="comboBoxExamples">
+  <property name="toolTip">
+   <string>Выберите пример регулярного выражения</string>
+  </property>
+ </widget>
+</item>
+    <item>
+     <widget class="QLineEdit" name="lineEditRegex">
+      <property name="placeholderText">
+       <string>Введите регулярное выражение</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEditInput"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="QCheckBox" name="checkBoxCaseInsensitive">
+        <property name="text">
+         <string>Case Insensitive</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBoxMultiline">
+        <property name="text">
+         <string>Multiline</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="labelStatus"/>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidgetMatches"/>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEditHints"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+</ui>
